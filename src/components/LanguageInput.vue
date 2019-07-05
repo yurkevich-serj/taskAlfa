@@ -1,9 +1,15 @@
 <template>
   <form v-on:submit.prevent="$emit('inputChange', $event)">
-    <input type="text"  placeholder="Type language" id="language">
+    <input :value="languages" type="text" :placeholder="languages" id="language">
     <button type="submit">Submit</button>
   </form>
 </template>
+
+<script>
+  export default {
+    props: ['languages']
+  }
+</script>
 
 <style>
   input {
@@ -12,6 +18,7 @@
     height: 25px;
     border: 3px solid black;
   }
+
   button {
     height: 25px;
     background-color: #FFE0ED;

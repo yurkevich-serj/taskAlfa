@@ -6,6 +6,7 @@
 
 <script>
   import Language from "./components/Language";
+
   export default {
     name: 'App',
     components: {
@@ -15,10 +16,10 @@
 </script>
 <style>
   #app {
-    display:flex;
+    display: flex;
     justify-content: center;
     margin-top: 100px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
- }
+  }
 </style>
